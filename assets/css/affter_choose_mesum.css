@@ -1,0 +1,36 @@
+.header_affter_choose_museum-title {
+  text-align: center;
+}
+.header_affter_choose_museum-choose_topic {
+  padding: 12px;
+}
+.affter_choose_museum-choose_topic-main {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.affter_choose_museum-choose_topic-content {
+  min-width: 65px;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 10px;
+}
+.affter_choose_museum-choose_topic-content:nth-child(1) {
+  background-color: #efb570;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+span {
+  font-size: 11px;
+}
+.affter_choose_mesum-container {
+  margin-bottom: 10px;
+}

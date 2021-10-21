@@ -1,0 +1,19 @@
+body {
+  box-sizing: border-box;
+  background-color: #f0dddd;
+}
+
+.container_choose_museum {
+  padding: 50px;
+}
+.choose_mesum-topic div {
+  background-color: #efb570;
+  border-radius: 10px;
+  height: 60px;
+}
+.choose_mesum-title-content div {
+  text-align: center;
+}
+.choose_mesum-title {
+  margin-bottom: 50px;
+}
