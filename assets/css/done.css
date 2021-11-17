@@ -1,0 +1,54 @@
+html {
+  height: 100%;
+}
+body {
+  background-color: #e8d5c5 !important;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container-configration {
+  position: relative;
+  padding: 0 !important;
+}
+.background-configration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 70%;
+  margin: auto;
+  z-index: 2;
+  height: 130%;
+}
+.background-screen-winner {
+  width: 100%;
+}
+.image-huychuong {
+  padding: 12px;
+  height: 194px;
+  width: 194px;
+  background: #58d7b4;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.container-winner-content {
+  position: absolute;
+  /* bottom: -81%; */
+  top: 88%;
+  margin: 0 !important;
+}
+.container-winner-content div {
+  margin: auto;
+  margin-top: 10px;
+}
+.container-winner-content div p {
+  margin-bottom: 0;
+}
