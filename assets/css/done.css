@@ -2,12 +2,20 @@ html {
   height: 100%;
 }
 body {
-  background-color: #e8d5c5 !important;
   height: 100%;
 }
 
 * {
   box-sizing: border-box;
+}
+.mobie-done {
+  background-color: #e8d5c5 !important;
+  width: 414px;
+  position: fixed;
+  height: 642px;
+  top: 7%;
+  left: 35%;
+  right: 35%;
 }
 .container-configration {
   position: relative;
