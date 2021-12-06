@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/man1-base.css">
+</head>
+
+<body>
+    <div class="container-sm border main">
+        <div class="main-top row">
+            <div class="">
+                <div class="container-back_button">
+                    <i class="bi bi-chevron-left"></i>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="d-flex align-content-center justify-content-between m-auto container-home-and-question">
+                    <i class="bi bi-house-fill"></i>
+                    <i class="bi bi-patch-question-fill"></i>
+                </div>
+            </div>
+        </div>
+        <div class="main-body">
+            <div class="row">
+                <div class="artifacts">
+                    <div class="mySlides-artifacts">
+                        <img src="../assets//image/Bao vat 1 1.png" />
+                    </div>
+                    <div class="mySlides-artifacts">
+                        <img src="../assets//image/Bao vat 1 1.png" />
+                    </div>
+                    <div class="mySlides-artifacts">
+                        <img src="../assets//image/Bao vat 1 1.png" />
+                    </div>
+                    <div class="mySlides-artifacts">
+                        <img src="../assets//image/Bao vat 1 1.png" />
+                    </div>
+                    <div class="mySlides-artifacts">
+                        <img src="../assets//image/Bao vat 1 1.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row container-decription-history">
+                <p>Đây là bộ sưu tập thời đại Hùng Vương và giai đoạn văn hóa Phùng Nguyên, Phú Thọ</p>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-3 btn btn-mobile">
+                    QUÉT
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.artifacts').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                variableWidth: true,
+                // adaptiveHeight: true
+
+            });
+        });
+    </script>
+</body>
+
+</html>
