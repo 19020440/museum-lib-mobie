@@ -27,4 +27,5 @@
 .control-camera .item-control-camera i {
     color: white;
     font-size: 2rem;
+    cursor: pointer;
 }
