@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: var(--bg-body);
+    background-color: rgb(36, 36, 36);
 }
 
 .bg-button {
@@ -27,6 +27,8 @@ body {
 .main {
     height: 99vh;
     position: relative;
+    background-color: var(--bg-body);
+    padding: 0;
 }
 
 @media (min-width: 575.98px) {
