@@ -1,0 +1,30 @@
+.image-start img {
+    width: 50%;
+}
+
+.btn-start {
+    /* position: absolute; */
+    bottom: 1px;
+}
+
+.guide {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    position: absolute;
+    bottom: 1px;
+}
+
+.image-guide {}
+
+.text-box-guide {
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.icon-item-guide {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+}
