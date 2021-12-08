@@ -19,7 +19,7 @@
             </div>
             <div class="row">
                 <div class="col-11 container-home-and-question">
-                    <i class="bi bi-house-fill"></i>
+                    <i class="bi bi-house-fill" onclick="handleGotoHome()"></i>
                     <i class="bi bi-patch-question-fill"></i>
                 </div>
                 <div class="col-10 col-sm-10 col-lg-10 artifacts" style="margin:auto">
@@ -90,6 +90,9 @@
             time--;
             if(time == 0) clearInterval(changeTime);
         }, 1000)
+        const handleGotoHome = () => {
+            window.location.href = '/public/batdau.html'
+        }
     </script>
 </body>
 </html>
