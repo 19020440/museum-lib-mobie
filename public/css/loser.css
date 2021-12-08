@@ -1,47 +1,106 @@
-.background-loser-image {
-  width: 100%;
-  height: 100%;
+/* .background-loser-image {
+    width: 100%;
+    height: 100%;
 }
-.background-loser {
+
+.background-loser {} */
+
+
+/* .container-image-lose {
+    height: 100%;
+    width: 100%;
+    position: relative;
+} */
+
+
+/* .screen-loser {
+    height: 100%;
 }
-.container-image-lose {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-.screen-loser {
-  height: 100%;
-}
+
 .screen-loser-main {
-  height: 100%;
-}
+    height: 100%;
+} */
+
 .screen-loser-main .container-home-and-question {
-  /* margin-bottom: 0; */
+    /* margin-bottom: 0; */
 }
-.container-loser-choice {
-  position: absolute;
-  top: 30%;
-  left: 10%;
+
+
+/* .container-loser-choice {
+    
+    top: 30%;
+    left: 10%;
+} */
+
+
+/* .container-loser-choice-image {
+    margin: auto;
 }
-.container-loser-choice-rain {
-  margin: auto;
-}
+
 .container-loser-choice-answer {
-  margin: auto;
-  text-align: center;
+    margin: auto;
+    text-align: center;
 }
+
 .container-loser-choice-answer p {
-  font-size: 20px;
+    font-size: 20px;
 }
+
 .container-loser-buton .col-5 {
-  border-radius: 10px;
-  text-align: center;
-  color: white;
-  padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
+
 .container-loser-buton .col-5 p {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
+
 .container-loser-buton {
-  margin-top: 10px !important;
+    margin-top: 10px !important;
+} */
+
+
+/* custom */
+
+.background-loser {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.background-loser-image {
+    --length: 600px;
+    width: var(--length);
+    height: var(--length);
+    background-color: #FCB17A;
+    border-radius: 50%;
+    left: calc(-1 * (var(--length) - 100%) / 2 - 1rem);
+    /* left: 10%; */
+    position: absolute;
+}
+
+.container-loser-choice {
+    /* position: absolute; */
+    /* top: 30%;
+    left: 10%; */
+    z-index: 1;
+}
+
+.container-image-lose {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.container-loser-choice-answer {
+    margin: auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.container-loser-buton-item {
+    color: white;
+    z-index: 1;
 }

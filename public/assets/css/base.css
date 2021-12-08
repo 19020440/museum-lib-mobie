@@ -1,132 +1,145 @@
 :root {
-  --bg-body: #fff1d9;
-  --bg-main: #f6be8f;
-  --bg-button: #77552f;
+    --bg-body: #fff1d9;
+    --bg-main: #f6be8f;
+    --bg-button: #77552f;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(36, 36, 36);
+    background-color: rgb(36, 36, 36);
 }
 
 .bg-button {
-  background-color: var(--bg-button);
+    background-color: var(--bg-button);
 }
 
 .bg-main {
-  background-color: var(--bg-main);
+    background-color: var(--bg-main);
 }
 
 .bg-body {
-  background-color: var(--bg-body);
+    background-color: var(--bg-body);
 }
 
 .main {
-  height: 99vh;
-  position: relative;
-  background-color: var(--bg-body);
-  padding: 0;
+    height: 99vh;
+    position: relative;
+    background-color: var(--bg-body);
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
 }
 
 @media (min-width: 575.98px) {
-  .main {
-    width: 575.98px !important;
-  }
+    .main {
+        width: 575.98px !important;
+    }
 }
+
 
 /* top*/
 
+.main-top {
+    position: relative;
+}
+
 .container-back_button {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .container-back_button i {
-  font-size: 1.2rem;
-  color: white;
+    font-size: 1.2rem;
+    color: white;
 }
 
 .container-home-and-question {
-  margin-top: 0.5rem;
-  padding: 0 1rem;
+    margin-top: 0.5rem;
+    padding: 0 1rem;
 }
 
 .container-home-and-question i {
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  border-radius: 50%;
-  background: white;
-  font-size: 30px;
-  cursor: pointer;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: white;
+    font-size: 30px;
+    cursor: pointer;
 }
+
 
 /* button */
 
 .btn-mobile {
-  background-color: var(--bg-button);
-  border-radius: 0.6rem;
-  color: white;
+    background-color: var(--bg-button);
+    border-radius: 0.6rem;
+    color: white;
 }
 
 .btn-mobile:hover {
-  color: white;
+    color: white;
 }
 
 .btn-scan {
-  color: white;
+    color: white;
 }
+
 
 /* body*/
 
 .main-body {
-  margin-top: 1rem;
-  padding: 0 1rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
 }
+
 
 /* overlay main*/
 
 .overlay-main {
-  position: absolute;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-  cursor: pointer;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
 }
+
 
 /* guide */
 
 .guide {
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  position: absolute;
-  bottom: 1px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    position: absolute;
+    bottom: 1px;
 }
 
-.image-guide {
-}
+.image-guide {}
 
 .text-box-guide {
-  border-radius: 1rem;
-  padding: 0.5rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
 }
 
 .icon-item-guide {
-  background-color: white;
-  color: black;
-  border-radius: 50%;
-  text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
 }

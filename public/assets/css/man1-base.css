@@ -2,6 +2,13 @@ html {
     height: 100%;
 }
 
+.clock-goiy {
+    position: absolute;
+    bottom: -19px;
+    z-index: 1;
+    right: 20px;
+}
+
 .artifacts {
     background: #f6be8f;
     height: 80px;

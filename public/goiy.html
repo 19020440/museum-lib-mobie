@@ -1,98 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css//man1.css">
-    <link rel="stylesheet" href="./css/done.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
+
+    <!-- <link rel="stylesheet" href="./css//man1.css"> -->
+    <!-- <link rel="stylesheet" href="./css/done.css"> -->
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/man1-base.css">
 </head>
+
 <body>
     <div class="container-sm border main">
-        <div class="container container-lg container-sm container-xl">
-            <div class="container-back_button" >
-                <i class="bi bi-chevron-left"></i>
+        <div class="main-top row  gx-0">
+            <div class="">
+                <div class="container-back_button">
+                    <i class="bi bi-chevron-left"></i>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-11 container-home-and-question">
-                    <i class="bi bi-house-fill" onclick="handleGotoHome()"></i>
+
+            <div class="">
+                <div class="d-flex align-content-center justify-content-between container-home-and-question">
+                    <i class="bi bi-house-fill"></i>
                     <i class="bi bi-patch-question-fill"></i>
                 </div>
-                <div class="col-10 col-sm-10 col-lg-10 artifacts" style="margin:auto">
-                    <p class="clock-goiy">00:15</p>
-                    <div class="row">
+            </div>
+            <div class="clock-goiy text-end">
+                <span id="time-mins">00</span>:<span id="time-seconds">00</span>
+            </div>
 
-                        <div class="col-11 container-artifacts" style="margin:auto">
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="mySlides-artifacts">
-                                        <img src="../assets//image/Bao vat 1 1.png"/>
-                                        
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="mySlides-artifacts">
-                                        <img src="../assets//image/Bao vat 1 1.png"/>
-    
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="mySlides-artifacts">
-                                        <img src="../assets//image/Bao vat 1 1.png"/>
-    
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="mySlides-artifacts">
-                                        <img src="../assets//image/Bao vat 1 1.png"/>
-    
-                                    </div>
-                                </div>
-                            </div>
-       
-                        </div>
+        </div>
+        <div class="main-body">
+            <div class="row gx-0">
+                <div class="artifacts">
+                    <div class="mySlides-artifacts">
+                        <div class="mySlides-artifacts--item"></div>
+                    </div>
+                    <div class="mySlides-artifacts">
+                        <div class="mySlides-artifacts--item icon-choice"></div>
+
+                    </div>
+                    <div class="mySlides-artifacts">
+                        <div class="mySlides-artifacts--item"></div>
+
+                    </div>
+                    <div class="mySlides-artifacts">
+                        <div class="mySlides-artifacts--item"></div>
+
+                    </div>
+                    <div class="mySlides-artifacts">
+                        <div class="mySlides-artifacts--item"></div>
                     </div>
                 </div>
-                <div class="col-10 col-sm-10 col-lg-10 container-decription-history">
-                    <p>Đây là bộ sưu tập thời đại Hùng Vương và giai đoạn văn hóa Phùng Nguyên, Phú Thọ</p>
+            </div>
+
+            <div class="row container-decription-history gx-0">
+                <p>Đây là bộ sưu tập thời đại Hùng Vương và giai đoạn văn hóa Phùng Nguyên, Phú Thọ</p>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-3 btn btn-mobile btn-scan">
+                    QUÉT
                 </div>
-    
-                <div class="col-4 col-sm-4 container-button-allow" onclick="handleGotoScan(this)">
-                    <p>QUÉT</p>
+
+            </div>
+            <div class="row align-items-center justify-content-center gx-0">
+                <div class="col-12 container-suggestions">
+                    <p>gợi ý</p>
                 </div>
-    
-                <div class="col-10 col-sm-10 col-lg-10 container-suggestions">
-                    <p>Gợi ý</p>
-                </div>
-    
+
             </div>
         </div>
-    
-    </div>
-    
 
-    
+        <div class="overlay-main">
+            <div class="guide">
+                <img class="item-guide image-guide" src="./image/Bot-1 1.png" alt="">
+                <div class="bg-main item-guide text-box-guide">
+                    <p>
+                        Xem hộp thành tựu để biết những điều đã đạt được. Cùng nhau giải đố để đi đến địa điểm tiếp theo. Và scan khi tới nơi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script>
-        const handleGotoScan = (e) => {
-            window.location.href = 'http://127.0.0.1:5500/public/quetqr.html'
-        }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/man1-base.js"></script>
+
+    <!-- <script>
         let time = 15;
         const clock = document.querySelector('.clock-goiy');
         const changeTime = setInterval(() => {
             clock.innerHTML = `00:${time >10? '': '0'}${time-1}`;
             time--;
-            if(time == 0) clearInterval(changeTime);
+            if (time == 0) clearInterval(changeTime);
         }, 1000)
-        const handleGotoHome = () => {
-            window.location.href = '/public/batdau.html'
+    </script> -->
+
+    <script>
+        $(document).ready(function() {
+            $('.artifacts').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                variableWidth: true,
+                // adaptiveHeight: true
+
+            });
+        });
+    </script>
+
+    <script>
+        window.onload = function() {
+
+            var seconds = 00;
+            var tens = 00;
+            var appendSecond = document.getElementById("time-seconds")
+            var appendMins = document.getElementById("time-mins")
+
+            var Interval;
+            clearInterval(Interval);
+            Interval = setInterval(startTimer, 999);
+            // buttonStart.onclick = function() {
+
+            //     clearInterval(Interval);
+            //     Interval = setInterval(startTimer, 10);
+            // }
+
+            // buttonStop.onclick = function() {
+            //     clearInterval(Interval);
+            // }
+
+
+            // buttonReset.onclick = function() {
+            //     clearInterval(Interval);
+            //     tens = "00";
+            //     seconds = "00";
+            //     appendSecond.innerHTML = tens;
+            //     appendMins.innerHTML = seconds;
+            // }
+
+
+
+            function startTimer() {
+                tens++;
+
+                if (tens <= 9) {
+                    appendSecond.innerHTML = "0" + tens;
+                }
+                if (tens > 9) {
+                    appendSecond.innerHTML = tens;
+
+                }
+                if (tens > 60) {
+                    console.log("seconds");
+                    seconds++;
+                    appendMins.innerHTML = "0" + seconds;
+                    tens = 0;
+                    appendSecond.innerHTML = "0" + 0;
+                }
+                if (seconds > 9) {
+                    appendMins.innerHTML = seconds;
+                }
+
+            }
+
+
         }
     </script>
 </body>
+
 </html>

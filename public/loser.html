@@ -1,21 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css//loser.css">
-    <link rel="stylesheet" href="./css//man1.css">
-    <link rel="stylesheet" href="./css/done.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
+    <!-- <link rel="stylesheet" href="./assets/css/man1-base.css"> -->
+    <!-- <link rel="stylesheet" href="./css//man1.css">
+        <link rel="stylesheet" href="./css/done.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./css//loser.css">
 </head>
+
 <body>
     <div class="container-sm border main">
+
+        <div class="main-top row  gx-0">
+            <div class="">
+                <div class="container-back_button">
+                    <i class="bi bi-chevron-left"></i>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="d-flex align-content-center justify-content-between container-home-and-question">
+                    <i class="bi bi-house-fill"></i>
+                    <i class="bi bi-patch-question-fill"></i>
+                </div>
+            </div>
+        </div>
+        <div class="main-body">
+            <div class="background-loser">
+                <div class="background-loser-image"></div>
+            </div>
+
+            <div class="container-lsoser-choice">
+                <div class="row d-flex align-items-center justify-content-center container-loser-choice-image">
+                    <div class="col-6 container-loser-choice-image">
+                        <img src="https://media.giphy.com/media/UsSMag6lA0hGCjOfCt/giphy.gif" alt="" class="container-image-lose">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-7 container-loser-choice-answer">
+                        <p>Câu trả lời chưa chính xác</p>
+                    </div>
+                </div>
+
+                <div class="row d-flex align-items-center justify-content-center container-loser-buton">
+                    <div class="col-5 btn bg-button container-loser-buton-item mx-1" onclick="handleGotoAns(this)">
+                        XEM GỢI Ý
+                    </div>
+                    <div class="col-5 btn bg-button container-loser-buton-item mx-1" onclick="handleGotoNextQuis(this)">
+                        CÂU TIẾP
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="overlay-main">
+            <div class="guide">
+                <img class="item-guide image-guide" src="./image/Bot-1 1.png" alt="">
+                <div class="bg-main item-guide text-box-guide">
+                    <p>
+                        Xem hộp thành tựu để biết những điều đã đạt được. Cùng nhau giải đố để đi đến địa điểm tiếp theo. Và scan khi tới nơi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 
+
+    <div class="container-sm border main">
         <div class="container container-lg container-sm container-xl screen-loser">
-            <div class="container-back_button" >
+            <div class="container-back_button">
                 <i class="bi bi-chevron-left"></i>
             </div>
             <div class="row screen-loser-main">
@@ -23,11 +90,11 @@
                     <i class="bi bi-house-fill"></i>
                     <i class="bi bi-patch-question-fill"></i>
                 </div>
-                
+
                 <div class="col-12 background-loser" style="margin-bottom: 31%;">
-                    <img src="./image/bacground-loser.png" class="background-loser-image"/>
+                    <img src="./image/bacground-loser.png" class="background-loser-image" />
                 </div>
-    
+
                 <div class="col-10 container-loser-choice">
                     <div class="row">
                         <div class="col-6 container-loser-choice-rain">
@@ -36,7 +103,7 @@
                         <div class="col-7 container-loser-choice-answer">
                             <p>Câu trả lời chưa chính xác</p>
                         </div>
-    
+
                         <div class="col-12 container-loser-buton" style="margin: auto;">
                             <div class="row" style="justify-content: space-around; align-items: center;">
                                 <div class="col-5" style="background-color: #77552F;" onclick="handleGotoAns(this)">
@@ -48,27 +115,22 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
-    
+
             </div>
         </div>
     </div>
-    
+ -->
 
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script>
-        const handleGotoNextQuis = (e) => {
-            window.location.href = '/public/man1-base.html';
-        }
-        const handleGotoAns = (e) => {
-            window.location.href = '/public/goiy.html';
-        }
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+
+
 </body>
+
 </html>
-    
