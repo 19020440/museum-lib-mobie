@@ -30,6 +30,7 @@ body {
   background: #f6be8f;
   height: 80px;
   border-radius: 10px;
+  position: relative;
 }
 .artifacts .row {
   height: 100%;
@@ -47,12 +48,12 @@ body {
 }
 .mySlides-artifacts::after {
   content: "";
-  width: calc(var(--bs-gutter-x));
+  width: 100%;
   height: 2px;
   background-color: black;
   position: absolute;
   top: 50%;
-  right: -50%;
+  right: -100%;
 }
 .mySlides-artifacts img {
   height: 80%;
@@ -96,5 +97,12 @@ body {
 .container-suggestions p {
   margin-bottom: 0;
   height: 30%;
-  margin-top: 17%;
+  margin-top: 10%;
+}
+/*GOI Y */
+.clock-goiy {
+  position: absolute;
+  top: -25%;
+  right: 1%;
+  font-size: 22px;
 }
