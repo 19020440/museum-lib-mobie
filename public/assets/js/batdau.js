@@ -1,8 +1,8 @@
 $(document).ready(function() {
     $('.main-top .bi-patch-question-fill').click(clickGuide);
     $('.overlay-main').click(off);
-    on();
 
+    $('.btn-start').click(clickStart)
 
 })
 
@@ -19,4 +19,8 @@ function on() {
 
 function off() {
     $(".overlay-main").css('display', 'none');
+}
+
+function clickStart() {
+    window.location.href = './man1-base.html';
 }
