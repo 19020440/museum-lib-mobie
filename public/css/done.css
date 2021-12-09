@@ -1,62 +1,87 @@
-html {
-  height: 100%;
-}
-body {
-  height: 100%;
+.background-configration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    /* z-index: 2; */
+    height: 99vh;
+    background: url(https://media.giphy.com/media/3orntPDQO9sdQAZ4vT/giphy.gif) no-repeat;
+    background-size: cover;
 }
 
-* {
-  box-sizing: border-box;
-}
-.mobie-done {
-  background-color: #e8d5c5 !important;
-  width: 414px;
-  position: fixed;
-  height: 642px;
-  top: 7%;
-  left: 35%;
-  right: 35%;
-}
-.container-configration {
-  position: relative;
-  padding: 0 !important;
-}
-.background-configration {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 70%;
-  margin: auto;
-  z-index: 2;
-  height: 130%;
-}
+
+/* custom */
+
 .background-screen-winner {
-  width: 100%;
+    position: absolute;
+    --length: calc(100% + 100px);
+    width: var(--length);
+    height: var(--length);
+    background-color: var(--bg-main);
+    border-radius: 50%;
+    top: -50vh;
+    left: calc(-1 * (var(--length) - 100% + 10%) / 2);
+    transform: rotate(-2.78deg);
 }
+
 .image-huychuong {
-  padding: 12px;
-  height: 194px;
-  width: 194px;
-  background: #58d7b4;
-  text-align: center;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+    padding: 12px;
+    height: 194px;
+    width: 194px;
+    background-color: #58d7b4;
+    background-image: url(../image/huychuong.svg);
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
+
 .container-winner-content {
-  position: absolute;
-  /* bottom: -81%; */
-  top: 88%;
-  margin: 0 !important;
+    position: absolute;
+    top: 51%;
 }
-.container-winner-content div {
-  margin: auto;
-  margin-top: 10px;
+
+.done-clock {}
+
+.done-clock-text {
+    font-size: 1.2rem;
+    font-weight: 500;
 }
-.container-winner-content div p {
-  margin-bottom: 0;
+
+.bg-winner-content {
+    z-index: 1;
+}
+
+.bg-winner-content::before {
+    content: '';
+    position: absolute;
+    background-image: url(../image/phao.webp);
+    /* background-color: #58d7b4; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    top: -11%;
+    left: 0;
+}
+
+.bg-winner-content::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url(../image/phao.webp);
+    background-repeat: no-repeat;
+    /* background-color: #58d7b4; */
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    top: -11%;
+    right: 0;
+    transform: rotate(-90deg);
 }
