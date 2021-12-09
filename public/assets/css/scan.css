@@ -1,32 +1,29 @@
-.main {
-    overflow: hidden;
+.control-camera .item-control-camera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.main-body {
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 0;
+.camera {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 99vh;
+  padding: 0;
+  position: fixed;
+  top: 0;
 }
 
 .view-camera {
-    background-color: black;
+  background-color: black;
 }
 
 .control-camera {
-    background-color: black;
-    display: none;
+  background-color: black;
+  display: none;
 }
-
-.control-camera .item-control-camera {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .control-camera .item-control-camera i {
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
 }

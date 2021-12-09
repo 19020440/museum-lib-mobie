@@ -1,0 +1,98 @@
+html {
+    height: 100%;
+}
+
+.clock-goiy {
+    position: absolute;
+    bottom: -19px;
+    z-index: 1;
+    right: 20px;
+}
+
+.artifacts {
+    background: #f6be8f;
+    height: 80px;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px 10px;
+}
+
+.artifacts::before {
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.mySlides-artifacts {
+    --length: 60px;
+    width: var(--length);
+    height: var(--length);
+    /* height: 100%; */
+    border-radius: 10px;
+    background-color: #a4efb9;
+    margin: 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.mySlides-artifacts .mySlides-artifacts--item.icon-choice {
+    --length: 100%;
+    width: var(--length);
+    height: var(--length);
+    position: absolute;
+    z-index: 1;
+    background-image: url(../../../public/image/icon-choice.png);
+    background-repeat: no-repeat;
+    top: -25%;
+    left: 20%;
+}
+
+.mySlides-artifacts .mySlides-artifacts--item {
+    --length: 100%;
+    width: var(--length);
+    height: var(--length);
+    position: absolute;
+    z-index: 1;
+    background-image: url(../../../public/image/BaoVat.png);
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 25%;
+}
+
+.mySlides-artifacts img {
+    height: 80%;
+    /* width: 50%; */
+    object-fit: contain;
+    /* margin: 10% 0 0 25%; */
+    position: absolute;
+}
+
+.container-decription-history {
+    margin-top: 10px;
+    /* margin: 20px auto auto auto !important; */
+    background: #f6be8f;
+    height: 245px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.container-decription-history p {
+    padding: 0;
+}
+
+.container-suggestions {
+    margin: 10px auto auto auto !important;
+    background: #f6be8f;
+    height: 126px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.container-suggestions p {
+    margin-bottom: 0;
+    height: 30%;
+    margin-top: 17%;
+}

@@ -1,0 +1,29 @@
+@import './base/variables',
+'./base/mixins',
+'./base/placeholders';
+.camera {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 99vh;
+    padding: 0;
+    position: fixed;
+    top: 0;
+}
+
+.view-camera {
+    background-color: black;
+}
+
+.control-camera {
+    background-color: black;
+    display: none;
+    .item-control-camera {
+        @extend %center-flex;
+        i {
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    }
+}
