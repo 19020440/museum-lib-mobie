@@ -2,17 +2,20 @@
 './base/mixins',
 './base/placeholders';
 .camera {
-    margin-top: 0;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    height: 99vh;
+    margin-top: 0;
     padding: 0;
-    position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
+    height: 99vh;
 }
 
 .view-camera {
     background-color: black;
+    min-height: 50vh;
 }
 
 .control-camera {

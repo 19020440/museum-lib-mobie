@@ -1,7 +1,3 @@
-html {
-  height: 100%;
-}
-
 .clock-goiy {
   position: absolute;
   bottom: -19px;
@@ -10,16 +6,15 @@ html {
 }
 
 .artifacts {
-  background: #f6be8f;
+  background-color: #FFFFFF;
   height: 80px;
-  border-radius: 10px;
+  border-radius: 0.8rem;
   position: relative;
   padding: 10px 10px;
 }
-
 .artifacts::before {
   content: "";
-  background-color: black;
+  background-color: #dfdfdf;
   height: 2px;
   width: 100%;
   position: absolute;
@@ -27,30 +22,18 @@ html {
 }
 
 .mySlides-artifacts {
-  --length: 60px;
-  width: var(--length);
-  height: var(--length);
+  width: 60px;
+  height: 60px;
   /* height: 100%; */
-  border-radius: 10px;
-  background-color: #a4efb9;
+  border-radius: 0.8rem;
+  background-color: #E0E7FF;
   margin: 0 2rem;
   position: relative;
   z-index: 1;
+  box-shadow: 1px 1px 8px 1px rgba(231, 231, 231, 0.92);
+  border: 1px #F1F2F6 solid;
 }
-
-.mySlides-artifacts .mySlides-artifacts--item.icon-choice {
-  --length: 100%;
-  width: var(--length);
-  height: var(--length);
-  position: absolute;
-  z-index: 1;
-  background-image: url(/images/icon-choice.png?0d5cb5935189dcf14a8f55f067492bfd);
-  background-repeat: no-repeat;
-  top: -25%;
-  left: 20%;
-}
-
-.mySlides-artifacts .mySlides-artifacts--item {
+.mySlides-artifacts .mySlides-artifacts--item, .mySlides-artifacts .icon-choice {
   --length: 100%;
   width: var(--length);
   height: var(--length);
@@ -61,7 +44,11 @@ html {
   top: 0px;
   left: 25%;
 }
-
+.mySlides-artifacts .icon-choice {
+  background-image: url(/images/icon-choice.png?0d5cb5935189dcf14a8f55f067492bfd);
+  top: -25%;
+  left: 20%;
+}
 .mySlides-artifacts img {
   height: 80%;
   /* width: 50%; */
@@ -74,24 +61,22 @@ html {
 .container-decription-history {
   margin-top: 10px;
   /* margin: 20px auto auto auto !important; */
-  background: #f6be8f;
+  background: #FFFFFF;
   height: 245px;
   text-align: center;
   border-radius: 10px;
 }
-
 .container-decription-history p {
   padding: 0;
 }
 
 .container-suggestions {
   margin: 10px auto auto auto !important;
-  background: #f6be8f;
+  background: #FFFFFF;
   height: 126px;
   text-align: center;
   border-radius: 10px;
 }
-
 .container-suggestions p {
   margin-bottom: 0;
   height: 30%;

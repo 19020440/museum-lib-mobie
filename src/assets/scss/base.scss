@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
 @import './base/variables',
 './base/mixins',
 './base/placeholders';
@@ -17,6 +18,7 @@
 
 body {
     background-color: rgb(36, 36, 36);
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .bg-button {
@@ -24,11 +26,16 @@ body {
 }
 
 .bg-main {
-    background-color: $bg-color-primary;
+    background-color: $bg-color-box-primary;
 }
 
 .bg-body {
     background-color: $bg-color-body;
+}
+
+.box-shadow {
+    // box-shadow: 1px 1px 8px 1px hsla(0, 0%, 91%, 0.92);
+    // border: 1px #F2F4F5 solid;
 }
 
 .main {
@@ -58,27 +65,26 @@ body {
 .container-back_button {
     position: absolute;
     top: 0;
-    left: 0;
+    // left: 0;
     z-index: 1;
     cursor: pointer;
 }
 
 .container-back_button i {
     font-size: 1.2rem;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .container-home-and-question {
     margin-top: 0.5rem;
     padding: 0 1rem;
-}
-
-.container-home-and-question i {
-    @include circle(50px);
-    text-align: center;
-    background: white;
-    font-size: 30px;
-    cursor: pointer;
+    i {
+        @include circle(50px);
+        text-align: center;
+        background: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
 }
 
 
@@ -88,10 +94,10 @@ body {
     background-color: $bg-color-button-primary;
     border-radius: $radius-button;
     color: $color-text-button;
-}
-
-.btn-mobile:hover {
-    color: $color-text-button;
+    &:hover {
+        color: $color-text-button;
+        background-color: $bg-color-button-hover-primary;
+    }
 }
 
 .btn-scan {
